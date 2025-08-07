@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Mesh Sketch Test</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="index.css" rel="stylesheet" />
+</head>
+
+<body oncontextmenu="return false">
+	<canvas id="canvas"></canvas>
+	<script type="module">
+		import init from "./mesh_sketch_test.js";
+
+		async function run() {
+			await init();
+		}
+
+		run().catch(console.error);
+	</script>
+</body>
+
+</html>
